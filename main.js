@@ -36,7 +36,16 @@ const mockNotes = [
 
 function renderNotes(notes = mockNotes) {
     const container = document.getElementById('notesGrid');
+    const emptyState = document.getElementById('emptyState');
     
+    if (notes.length === 0) {
+        container.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+    }
+
+    emptyState.classList.add('hidden');
+
     container.innerHTML = notes.map(note => `
         <div class="note-card bg-${note.color}-50 dark:bg-${note.color}-900/30 rounded-2xl p-6 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer group animate-slide-in">
             <div class="flex justify-between items-start mb-4">
