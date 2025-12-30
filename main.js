@@ -178,3 +178,10 @@ document.addEventListener('DOMContentLoaded', () => {
         searchNotes(e.target.value);
     });
 });
+
+function setActiveFilter(button) {
+  document.querySelectorAll('.filter-btn').forEach(btn =>
+    btn.classList.remove('ring-2', 'ring-purple-500')
+  );
+  button.classList.add('ring-2', 'ring-purple-500');
+}
