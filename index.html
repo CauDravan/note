@@ -42,7 +42,7 @@
                         <input 
                             type="text" 
                             id="searchInput"
-                            placeholder="Tìm kiếm ghi chú..." 
+                            placeholder="Search notes..." 
                             class="w-64 px-5 py-3 rounded-full bg-white/20 backdrop-blur-sm text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
                         >
                         <i class="fas fa-search absolute right-4 top-1/2 -translate-y-1/2 text-white/70"></i>
@@ -78,7 +78,7 @@
                         class="px-6 py-3 bg-white text-purple-600 rounded-full font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
                     >
                         <i class="fas fa-plus"></i>
-                        <span class="hidden md:inline">Tạo mới</span>
+                        <span class="hidden md:inline">Create</span>
                     </button>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                 <input 
                     type="text" 
                     id="searchInputMobile"
-                    placeholder="Tìm kiếm..." 
+                    placeholder="Search..." 
                     class="w-full px-5 py-3 rounded-full bg-white/20 backdrop-blur-sm text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50"
                 >
             </div>
@@ -99,7 +99,7 @@
     <div class="container mx-auto px-6 py-6">
         <div class="flex flex-wrap gap-3 justify-center">
             <button onclick="filterByCategory('all')" class="px-6 py-2 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:scale-105 transition-all duration-300 font-semibold text-gray-700 dark:text-white">
-                <i class="fas fa-th-large mr-2"></i>Tất cả
+                <i class="fas fa-th-large mr-2"></i>All
             </button>
             <button onclick="filterByCategory('Pet')" class="px-6 py-2 bg-green-100 dark:bg-green-900 rounded-full shadow-lg hover:scale-105 transition-all duration-300 font-semibold text-green-700 dark:text-green-300">
                 <i class="fas fa-paw mr-2"></i>Pet
@@ -131,7 +131,7 @@
                 <div class="flex items-center justify-between">
                     <h2 class="text-2xl font-bold flex items-center gap-3">
                         <i class="fas fa-edit"></i>
-                        Tạo ghi chú mới
+                        Create new note
                     </h2>
                     <button onclick="closeModal()" class="p-2 hover:bg-white/20 rounded-full transition-all">
                         <i class="fas fa-times text-xl"></i>
@@ -143,24 +143,24 @@
             <div class="p-6 space-y-5">
                 <div>
                     <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                        <i class="fas fa-heading mr-2"></i>Tiêu đề
+                        <i class="fas fa-heading mr-2"></i>Title
                     </label>
                     <input 
                         type="text" 
                         id="noteTitle"
-                        placeholder="Nhập tiêu đề ghi chú..."
+                        placeholder="Enter note title..."
                         class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all outline-none"
                     >
                 </div>
                 
                 <div>
                     <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                        <i class="fas fa-align-left mr-2"></i>Nội dung
+                        <i class="fas fa-align-left mr-2"></i>Content
                     </label>
                     <textarea 
                         id="noteContent"
                         rows="6"
-                        placeholder="Viết nội dung ghi chú của bạn..."
+                        placeholder="Write your note content here..."
                         class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all outline-none resize-none"
                     ></textarea>
                 </div>
@@ -168,7 +168,7 @@
                 <div class="grid grid-cols-2 gap-4">
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                            <i class="fas fa-tag mr-2"></i>Danh mục
+                            <i class="fas fa-tag mr-2"></i>Category
                         </label>
                         <select id="noteCategory" class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:border-purple-500 transition-all outline-none">
                             <option>Pet</option>
@@ -180,7 +180,7 @@
                     
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                            <i class="fas fa-palette mr-2"></i>Màu sắc
+                            <i class="fas fa-palette mr-2"></i>Color
                         </label>
                         <div class="flex gap-2">
                             <button class="w-10 h-10 rounded-full bg-green-400 hover:scale-110 transition-all shadow-lg"></button>
@@ -204,7 +204,7 @@
                     onclick="createNote()" 
                     class="px-6 py-3 rounded-xl gradient-bg text-white font-semibold hover:scale-105 transition-all shadow-lg"
                 >
-                    <i class="fas fa-save mr-2"></i>Lưu ghi chú
+                    <i class="fas fa-save mr-2"></i>Save Note
                 </button>
             </div>
         </div>
